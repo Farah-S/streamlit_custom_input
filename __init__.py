@@ -7,6 +7,4 @@ _component_func = components.declare_component(
 
 def ChatInput( key="button", initialValue="") -> str:
     component_value = _component_func(initialValue=initialValue,key=key)
-    c=(component_value)
-    
-    return c
+    return component_value
