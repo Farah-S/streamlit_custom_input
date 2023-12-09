@@ -31,8 +31,14 @@ const ChatInput=(props:ComponentProps)=>{
     };
 
   const onEnterClick = (event:React.KeyboardEvent) => {
-      if (event.key === "Enter" && event.shiftKey==false)
-        handleClick();
+      if (event.key === "Enter"){
+        event.preventDefault()
+        if (event.key === "Enter" && event.shiftKey==false){
+          handleClick();
+        }else{
+          setValue(value+'\n')
+        }
+      }
     };
     
   const onChangeHandler = ( ev: React.ChangeEvent<HTMLTextAreaElement>, ): void => setValue(ev.target.value)
@@ -43,7 +49,7 @@ const ChatInput=(props:ComponentProps)=>{
         <TextareaAutosize key={key} 
         placeholder="Type here.." 
         value={value} ref={inputRef} 
-        onKeyUp={onEnterClick} onChange={onChangeHandler} autoFocus 
+        onKeyDown={onEnterClick} onChange={onChangeHandler} autoFocus 
         style={{whiteSpace:"pre-line",resize:"none", marginLeft:"10px", marginRight:"10px",marginTop:"1.5px", width:"70%", borderRadius:"1rem",boxShadow: "none",maxBlockSize:"75px",borderColor: "transparent",backgroundColor: "#f1faff"}}/>
         
         <Button type="submit" onClick={handleClick} style={{width:"55px", borderRadius: "3rem", paddingRight:"5px",paddingTop:"3px", paddingLeft:"9px", display: "flex", justifyContent:"center", backgroundColor: "#f8efff", color: "#5b5b5c",borderColor:"transparent", height:"33px"}} >
