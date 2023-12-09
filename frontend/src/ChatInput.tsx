@@ -45,12 +45,12 @@ const ChatInput=(props:ComponentProps)=>{
 
 
   return (
-    <Row style={{ justifyContent:"center", paddingTop:"0px", paddingLeft:"90px"}}>
+    <Row style={{ justifyContent:"center", paddingTop:"0px", paddingLeft:"13%"}}>
         <TextareaAutosize key={key} 
         placeholder="Type here.." 
         value={value} ref={inputRef} 
         onKeyDown={onEnterClick} onChange={onChangeHandler} autoFocus 
-        style={{whiteSpace:"pre-line",resize:"none", marginLeft:"10px", marginRight:"10px",marginTop:"1.5px", width:"70%", borderRadius:"1rem",boxShadow: "none",maxBlockSize:"75px",borderColor: "transparent",backgroundColor: "#f1faff"}}/>
+        style={{whiteSpace:"pre-line",resize:"none", marginLeft:"25px", marginRight:"10px",marginTop:"0px", width:"80%", borderRadius:"1rem",boxShadow: "none",maxBlockSize:"75px",borderColor: "transparent",backgroundColor: "#eef7ff"}}/>
         
         <Button type="submit" onClick={handleClick} style={{width:"55px", borderRadius: "3rem", paddingRight:"5px",paddingTop:"3px", paddingLeft:"9px", display: "flex", justifyContent:"center", backgroundColor: "#f8efff", color: "#5b5b5c",borderColor:"transparent", height:"33px"}} >
         
