@@ -45,7 +45,7 @@ const ChatInput=(props:ComponentProps)=>{
 
 
   return (
-    <Row style={{ justifyContent:"center", paddingTop:"0px", paddingLeft:"13%"}}>
+    <Row style={{ justifyContent:"center", paddingTop:"0px", paddingLeft:"2%"}}>
         <TextareaAutosize key={key} 
         placeholder="Type here.." 
         value={value} ref={inputRef} 
