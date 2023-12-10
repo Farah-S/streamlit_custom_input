@@ -50,9 +50,9 @@ const ChatInput=(props:ComponentProps)=>{
         placeholder="Type here.." 
         value={value} ref={inputRef} 
         onKeyDown={onEnterClick} onChange={onChangeHandler} autoFocus 
-        style={{whiteSpace:"pre-line",resize:"none", marginLeft:"0", marginRight:"10px",paddingBottom:"3px", width:"75%", borderRadius:"1rem",boxShadow: "none",maxBlockSize:"75px",borderColor: "#f4efff",backgroundColor: "#fcf9ff"}}/>
+        style={{whiteSpace:"pre-line",resize:"none", marginLeft:"0", marginRight:"10px",marginTop:"1px", paddingBottom:"3px", width:"75%", borderRadius:"1rem",boxShadow: "none",maxBlockSize:"75px",borderColor: "#f4efff",backgroundColor: "#fafaff"}}/>
         
-        <Button type="submit" onClick={handleClick} style={{width:"55px", borderRadius: "3rem", paddingRight:"5px",paddingTop:"3px", paddingLeft:"9px", display: "flex", justifyContent:"center", backgroundColor: "#edf1ff", color: "#5b5b5c",borderColor:"transparent", height:"33px"}} >
+        <Button type="submit" onClick={handleClick} style={{width:"55px", borderRadius: "3rem", paddingRight:"5px",paddingTop:"3px", paddingLeft:"9px", display: "flex", justifyContent:"center", backgroundColor: "#edf3ff", color: "#5b5b5c",borderColor:"transparent", height:"33px"}} >
         
           <Icon baseClassName="material-symbols-outlined">send</Icon>
         
