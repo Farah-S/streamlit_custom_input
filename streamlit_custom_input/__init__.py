@@ -37,7 +37,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend\\build")
-    print(build_dir)
+    # print(build_dir)
     _component_func = components.declare_component("ChatInput", path=build_dir)
 
 
