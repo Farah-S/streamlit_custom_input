@@ -1,10 +1,12 @@
 {
-  "name": "chat",
-  "version": "0.1.0",
+  "name": "streamlit_custom_input",
+  "version": "0.0.6",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
-    "@mui/material": "^5.14.18",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.0",
+    "@mui/material": "^5.15.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-textarea-autosize": "^8.5.3",
+    "serve": "^14.2.1",
     "streamlit-component-lib": "^2.0.0",
     "styletron-engine-atomic": "^1.6.2",
     "styletron-react": "^6.1.1",
@@ -22,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,6 +41,7 @@
       "not dead",
       "not op_mini all"
     ],
+    "homepage": "",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

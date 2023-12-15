@@ -1,4 +1,4 @@
-LICENSE.txt
+LICENSE
 MANIFEST.in
 README.md
 setup.py
@@ -9,14 +9,9 @@ streamlit_custom_input.egg-info/dependency_links.txt
 streamlit_custom_input.egg-info/requires.txt
 streamlit_custom_input.egg-info/top_level.txt
 streamlit_custom_input/frontend/build/asset-manifest.json
-streamlit_custom_input/frontend/build/favicon.ico
+streamlit_custom_input/frontend/build/bootstrap.min.css
 streamlit_custom_input/frontend/build/index.html
-streamlit_custom_input/frontend/build/logo192.png
-streamlit_custom_input/frontend/build/logo512.png
-streamlit_custom_input/frontend/build/manifest.json
-streamlit_custom_input/frontend/build/robots.txt
-streamlit_custom_input/frontend/build/static/css/main.241951ba.css
-streamlit_custom_input/frontend/build/static/css/main.241951ba.css.map
-streamlit_custom_input/frontend/build/static/js/main.0de71429.js
-streamlit_custom_input/frontend/build/static/js/main.0de71429.js.LICENSE.txt
-streamlit_custom_input/frontend/build/static/js/main.0de71429.js.map
+streamlit_custom_input/frontend/build/send.png
+streamlit_custom_input/frontend/build/static/js/main.5ccb8198.js
+streamlit_custom_input/frontend/build/static/js/main.5ccb8198.js.LICENSE.txt
+streamlit_custom_input/frontend/build/static/js/main.5ccb8198.js.map

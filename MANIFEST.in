@@ -1,1 +1,2 @@
-recursive-include streamlit_custom_input/frontend/build *
+include streamlit_custom_input/frontend/build/*
+include streamlit_custom_input/frontend/build/static/js/*

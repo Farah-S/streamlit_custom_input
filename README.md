@@ -1,6 +1,6 @@
-# streamlit-custom-component
+# streamlit_custom_chat
 
-Streamlit component that displays a custom made chat layout
+Streamlit component that allows you to do X
 
 ## Installation instructions
 
@@ -15,7 +15,5 @@ import streamlit as st
 
 from streamlit_custom_input import ChatInput
 
-value = ChatInput()
-
-st.write(value)
+value = ChatInput(initialValue="",key="input")
 ```
