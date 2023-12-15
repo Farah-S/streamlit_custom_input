@@ -1,6 +1,5 @@
-# streamlit_custom_chat
-
-Streamlit component that allows you to do X
+# streamlit_custom_input
+Streamlit custom input
 
 ## Installation instructions
 
