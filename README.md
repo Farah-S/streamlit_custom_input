@@ -4,7 +4,7 @@ Streamlit custom input
 ## Installation instructions
 
 ```sh
-pip install streamlit_custom_input
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps streamlit_custom_input
 ```
 
 ## Usage instructions
