@@ -5,7 +5,7 @@ Streamlit component that displays a custom made chat layout
 ## Installation instructions
 
 ```sh
-pip install streamlit-custom-input
+pip install streamlit_custom_input
 ```
 
 ## Usage instructions
@@ -13,7 +13,7 @@ pip install streamlit-custom-input
 ```python
 import streamlit as st
 
-from streamlit-custom-input import ChatInput
+from streamlit_custom_input import ChatInput
 
 value = ChatInput()
 

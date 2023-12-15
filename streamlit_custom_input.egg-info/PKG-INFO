@@ -1,33 +1,40 @@
 Metadata-Version: 2.1
 Name: streamlit-custom-input
-Version: 0.0.1
+Version: 0.0.2
 Summary: Streamlit component for a custom chat input
-Home-page: UNKNOWN
+Home-page: 
 Author: Farah S
 Author-email: 
-License: UNKNOWN
-Description: # streamlit-custom-component
-        
-        Streamlit component that displays a custom made chat layout
-        
-        ## Installation instructions
-        
-        ```sh
-        pip install streamlit-custom-input
-        ```
-        
-        ## Usage instructions
-        
-        ```python
-        import streamlit as st
-        
-        from streamlit-custom-input import ChatInput
-        
-        value = ChatInput()
-        
-        st.write(value)
-        ```
-Platform: UNKNOWN
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: streamlit>=0.63
 Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.39.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+
+# streamlit-custom-component
+
+Streamlit component that displays a custom made chat layout
+
+## Installation instructions
+
+```sh
+pip install streamlit_custom_input
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from streamlit_custom_input import ChatInput
+
+value = ChatInput()
+
+st.write(value)
+```
