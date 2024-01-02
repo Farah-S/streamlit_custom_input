@@ -1,10 +1,11 @@
 # streamlit_custom_input
 
-![input_example](https://github.com/Farah-S/streamlit_custom_chat/blob/master/streamlit_custom_chat/frontend/public/container_example.png)
+![input_example](https://github.com/Farah-S/streamlit_custom_input/blob/main/streamlit_custom_input/frontend/public/input_example.png)
 
 Streamlit custom chat input box, it returns the value entered by the user on enter or by clicking on the button. To add a new line the user can press shift+enter. The parameters are as follow:
 
 Args:
+
     initialValue (string, optional): 
         The initial value that will be displayed in the input box
     
@@ -62,7 +63,7 @@ import streamlit as st
 
 from streamlit_custom_input import ChatInput
 
-value = ChatInput(initialValue="",key="input")
+value = ChatInput(initialValue="", key="input")
 ```
 
 Example of how to use with customization
@@ -72,7 +73,7 @@ import streamlit as st
 
 from streamlit_custom_input import ChatInput
 
-value = ChatInput(initialValue="",key="input", inputStyle={"backgroundColor":"black"}, buttonStyle={"height":"50px"})
+value = ChatInput(initialValue="", key="input", inputStyle={"backgroundColor":"black"}, buttonStyle={"height":"50px"})
 ```
 
 For more example please check the app.py
