@@ -13,7 +13,7 @@ eggs/
 .eggs/
 *.egg-info/
 *.egg
-
+streamlit_custom_input.egg-info
 # Unit test / coverage reports
 .coverage
 .coverage\.*
