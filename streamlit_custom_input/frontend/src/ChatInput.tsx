@@ -8,29 +8,6 @@ import { Button, } from "react-bootstrap";
 import Icon  from "@mui/material/Icon";
 import TextareaAutosize from 'react-textarea-autosize';
 
-interface State {
-  initialValue: string,
-  
-  key: "ChatInput",
-
-  inputStyle:{
-    paddingLeft:"10px", paddingRight:"10px",
-    whiteSpace:"pre-line", resize:"none", 
-    marginLeft:"0", marginRight:"10px",
-    paddingBottom:"3px", width:"75%", 
-    borderRadius:"1rem", maxBlockSize:"75px", 
-    borderColor: "#f4efff", backgroundColor: "#fcf9ff"},
-  
-    buttonStyle:{
-      width:"55px", borderRadius: "3rem", 
-      paddingRight:"5px", paddingTop:"3px", 
-      paddingLeft:"9px", display: "flex", 
-      justifyContent:"center", 
-      backgroundColor: "#edf1ff", color: "#5b5b5c",
-      height:"33px"
-    }
-}
-
 document.body.style.backgroundColor = "transparent";
 
 const ChatInput=(props:ComponentProps)=>{

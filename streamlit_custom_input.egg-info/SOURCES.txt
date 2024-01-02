@@ -11,9 +11,10 @@ streamlit_custom_input.egg-info/top_level.txt
 streamlit_custom_input/frontend/build/asset-manifest.json
 streamlit_custom_input/frontend/build/bootstrap.min.css
 streamlit_custom_input/frontend/build/index.html
+streamlit_custom_input/frontend/build/input_example.png
 streamlit_custom_input/frontend/build/send.png
 streamlit_custom_input/frontend/build/static/css/main.241951ba.css
 streamlit_custom_input/frontend/build/static/css/main.241951ba.css.map
-streamlit_custom_input/frontend/build/static/js/main.5ccb8198.js
-streamlit_custom_input/frontend/build/static/js/main.5ccb8198.js.LICENSE.txt
-streamlit_custom_input/frontend/build/static/js/main.5ccb8198.js.map
+streamlit_custom_input/frontend/build/static/js/main.9cbae9fd.js
+streamlit_custom_input/frontend/build/static/js/main.9cbae9fd.js.LICENSE.txt
+streamlit_custom_input/frontend/build/static/js/main.9cbae9fd.js.map

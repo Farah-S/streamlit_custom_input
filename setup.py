@@ -7,10 +7,10 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="streamlit_custom_input",
-    version="0.0.8",
+    version="0.1.0",
     author="Farah S",
     author_email="",
-    description="Streamlit component for displaying chat messages",
+    description="Streamlit component for taking user input",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",
@@ -19,7 +19,7 @@ setuptools.setup(
     classifiers=[],
     python_requires=">=3.7",
     package_data={
-        'streamlit_custom_chat': ['build/*'],
+        'streamlit_custom_input': ['build/*'],
     },
     install_requires=[
         # By definition, a Custom Component depends on Streamlit.
