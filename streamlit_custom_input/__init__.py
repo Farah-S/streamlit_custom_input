@@ -29,7 +29,7 @@ if _RELEASE==False:
         # Pass `url` here to tell Streamlit that the component will be served
         # by the local dev server that you run via `npm run start`.
         # (This is useful while your component is in development.)
-        url="http://localhost:3000",
+        url="http://localhost:3001",
     )
 else:
     # When we're distributing a production version of the component, we'll
@@ -46,22 +46,52 @@ else:
 # `declare_component` and call it done. The wrapper allows us to customize
 # our component's API: we can pre-process its input args, post-process its
 # output value, and add a docstring for users.
-def ChatInput(key="button", initialValue=""):
-    """Create a new instance of "ChatContainer".
+def ChatInput(key="chatInput", initialValue="", inputStyle={}, buttonStyle={}):
+    """Customizable input component that takes input from the user
 
-    Parameters
-    ----------
-    name: str
-        The name of the thing we're saying hello to. The component will display
-        the text "Hello, {name}!"
-    key: str or None
-        An optional key that uniquely identifies this component. If this is
-        None, and the component's arguments are changed, the component will
-        be re-mounted in the Streamlit frontend and lose its current state.
+    Args:
+        initialValue (string, optional): 
+            The initial value that will be displayed in the input box
+        
+        key (string, optional): 
+            Uniquely identifies the input instance. Defaults to "ChatInput".
+        
+        inputStyle (dict, optional): 
+            Allows the customization of the input box style with CSS. 
+            The values that can be changed and their default values are 
+            {
+                paddingLeft: "10px", 
+                paddingRight: "10px",
+                whiteSpace: "pre-line", 
+                resize: "none", 
+                marginLeft: "0", 
+                marginRight: "10px",
+                paddingBottom: "3px", 
+                width: "75%", 
+                borderRadius: "1rem", 
+                maxBlockSize: "75px", 
+                borderColor: "#f4efff", 
+                backgroundColor: "#fcf9ff"
+            }.
+            
+        buttonStyle (dict, optional): 
+            Allows the customization of the input button style with CSS. 
+            The values that can be changed and their default values are 
+            {    
+                width: "55px", 
+                borderRadius: "3rem", 
+                paddingRight: "5px", 
+                paddingTop: "3px", 
+                paddingLeft: "9px", 
+                display: "flex", 
+                justifyContent: "center", 
+                backgroundColor: "#edf1ff", 
+                color: "#5b5b5c",
+                height: "33px"
+            }.
 
-    Returns
-    -------
-    None
+    Returns:
+        string
     """
     # Call through to our private component function. Arguments we pass here
     # will be sent to the frontend, where they'll be available in an "args"
@@ -70,8 +100,7 @@ def ChatInput(key="button", initialValue=""):
     # "default" is a special argument that specifies the initial return
     # value of the component before the user has interacted with it.
     
-    # chatBubbles=[]
-    component_value = _component_func(initialValue=initialValue,key=key)
+    component_value = _component_func(initialValue=initialValue,key=key, inputStyle=inputStyle, buttonStyle=buttonStyle)
 
     # We could modify the value returned from the component if we wanted.
     # There's no need to do this in our simple example - but it's an option.
